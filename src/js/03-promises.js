@@ -16,7 +16,7 @@ function onSubmit(e) {
 
   for (let i = 0; i < amount; i += 1) {
     let position = i + 1;
-    let delay = currentDelay; // Створюємо копію змінної delay
+    let delay = currentDelay;
 
     console.log(delay);
 
