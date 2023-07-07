@@ -18,8 +18,6 @@ function onSubmit(e) {
     let position = i + 1;
     let delay = currentDelay;
 
-    console.log(delay);
-
     setTimeout(() => {
       createPromise(position, delay)
         .then(() => {})
