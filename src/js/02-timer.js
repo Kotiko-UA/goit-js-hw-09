@@ -11,7 +11,7 @@ const refs = {
   secondsEl: document.querySelector('span[data-seconds]'),
 };
 const date = new Date();
-
+let interval = null;
 refs.startBt.disabled = true;
 
 function convertMs(ms) {

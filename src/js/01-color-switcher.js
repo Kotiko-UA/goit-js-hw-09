@@ -4,6 +4,8 @@ const refs = {
   body: document.querySelector('body'),
 };
 
+let colorChangeInteval = null;
+
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
@@ -15,11 +17,11 @@ refs.btStop.addEventListener('click', onStopClick);
 
 function onStartClick() {
   refs.btStart.disabled = true;
-
   colorChangeInteval = setInterval(() => {
     refs.body.style.backgroundColor = getRandomHexColor();
   }, 1000);
 }
+
 function onStopClick() {
   refs.btStart.disabled = false;
   clearInterval(colorChangeInteval);
