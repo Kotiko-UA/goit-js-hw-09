@@ -77,6 +77,7 @@ function onClick(date) {
     );
     if (date < 1000) {
       clearInterval(interval);
+      Notify.success('Тікай з села');
     }
   }, 1000);
 }
